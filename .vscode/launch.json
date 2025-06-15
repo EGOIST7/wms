@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-WmsApplication<wms>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.liush.wms.WmsApplication",
+            "projectName": "wms",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=65128 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=wms"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-CodeGenerator<wms>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.liush.wms.common.CodeGenerator",
+            "projectName": "wms",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
